@@ -1,0 +1,321 @@
+html {                    /*Make transition smooth after pressing a nav link*/
+  scroll-behavior: smooth;
+}
+
+* {                         
+    box-sizing: border-box;
+    margin: 10px;
+    
+  }
+  
+  body {
+    max-width: 1300px;
+    font-family: Arial;
+    margin: auto;
+    background-color: #eee2dc;
+  }
+
+  main {
+    background-color: #edc7b7;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-content: space-between; 
+    text-align: center;
+    background: #123c69;
+    color: black;
+  }
+
+  h1{ 
+      font-size: 50px;    
+      margin: initial;
+      align-self: center; 
+      background-color:#ac3b61 ;   
+  }
+
+  h2{ 
+      text-align: right;
+      color: black;
+  }
+  
+  nav {
+    margin: initial;  
+    display: flex;  
+    background-color: #ac3b61;
+  }
+  
+  nav a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .parent1{             /*About me  container*/
+    display: flex;
+    background-color: #123c69; 
+    
+  }
+
+  .parent1 div article{
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: #bab2b5;    
+}
+  
+  .parent2{               /*Work container*/
+    display: flex;
+    background-color: #123c69;
+  }
+
+  .parent-aside{            
+    background-color: #ac3b61;
+    display: flex;
+}
+
+  aside {   
+    width: 100px;       
+  }
+  
+  .main-container {     /*Container for project 1-5/ where projects are stored */
+    
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .main-container header {
+    color: black;
+    font-size: 30px;
+    background-color:#ac3b61;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .main-container img {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100%;
+    
+  }
+.container2 {         /*Projects 2-5 container / To separate main project to the rest.*/       
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  /* border:solid;
+  border-width: 2px; */
+  padding: 5px;
+
+}
+
+.projects {           /*Projects 2-5 settings*/
+  flex: 0 0 300px; 
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+  background-color: #bab2b5;
+}
+
+.projects img {
+  margin: 5px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover; 
+}
+
+.projects header{
+  margin: 5px;
+  width: 300px;
+  background-color:#ac3b61;
+}
+
+  footer {            /*Footer is an independent container*/
+    flex-grow: 1; 
+    padding: 20px;
+    text-align: center;
+    background: #123c69;
+    color: black;
+  }
+
+  .container3 {         /*Contact me container*/
+    background-color: #123c69;
+    display: flex;
+    
+  }
+  
+  .parent4 {            /*Container for buttons*/
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    justify-content:space-evenly;
+    align-items: center;
+
+  }
+  
+  a.button{                 /*Buttons/links settings*/
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:2px solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: Arial;
+    font-weight:300;
+    color: black;
+    text-align:center;
+    transition: all 0.2s;
+    }
+    a.button:hover{
+    color:#000000;
+    background-color:#bab2b5;
+    }
+  
+
+  
+  
+  @media screen and (max-width: 768px) {     /*Settings for Ipads*/
+    body{
+      max-width: 700px;
+      margin: auto;
+    }
+
+    body nav {
+      flex-direction: column; 
+      flex: 1;
+    }
+
+
+
+    .parent1 {
+      flex-direction: column;
+    }
+
+    div.parent2{
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width:350px){ /*Settings for mobile phones*/
+    body{
+      max-width: 500px;
+      margin: 2px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body h1{
+      font-size: 50px;
+    }
+
+   body header{
+      height: 300px;
+      width: 300px;
+    }
+    .container3{
+      border: solid;
+      border-width: 2px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;  
+      padding: 5px;  
+    }
+
+
+  
+    .parent-aside aside{
+      flex-grow: 1;
+    }
+    .parent-aside aside h2{
+      text-align: center;  
+    }
+
+    .parent2{  
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-container{
+      border-style: solid;
+      margin: 0px;
+      padding: 0px;
+    }
+    
+
+    .independent-header{
+      padding: 0px;
+      margin: 0px;
+      width: 210px;
+      height: 90%;
+    }
+
+    .main-img{
+      border-style: solid;
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      height: 600px;   
+      object-fit: cover;
+
+    }
+
+
+    .container2 {
+      border-style: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0px 0px 0px 0px;
+      padding: 0;
+
+    }
+    .projects{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0px;
+      border-style: none;
+      flex: none;
+      background-color: #123c69;   
+    }
+
+    .projects header{
+      flex: 0;
+      margin: 0px;
+      width: 100%;
+    }
+
+    .projects img{
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .parent4{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+    
+    
+
+  
+  
+  
+  
