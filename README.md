@@ -17,3 +17,4 @@ Buttons and footer are just to show at the moment.
 
 ### Link to deployed page
 
+https://miguel-thethird.github.io/Updated-Portfolio/
